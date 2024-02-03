@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshers Website</title>
+    <style>
+         body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-color: black;
+            color: #333;
+        }
+
+        .frimg-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .frimg {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .frimg-text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .frimg-container:hover .frimg-text-overlay {
+            opacity: 1;
+        }
+
+        h3 {
+            font-family: 'Lucida Calligraphy';
+            font-size: 150%;
+        }
+
+        nav {
+            border: 2px solid rgb(79, 76, 76);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 0.5%;
+            background: black;
+            background: linear-gradient(to right, #32efa6, #e41874);
+            background: linear-gradient(to right, #009FFF, #25b37d, #c471ed, #ec2F4B);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        nav a {
+            color: #070707;
+            text-decoration: none;
+            transition: color 0.3s;
+            border: 15px linear-gradient(to right, #2cd695, #db1d73);
+        }
+
+        nav a:hover {
+            color: #ffd54f;
+        }
+
+        nav a.highlight {
+            font-size: 130%;
+            font-weight: 1000;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .block {
+            width: 99%;
+            margin: 2px 5px;
+            padding: 20px;
+            background-color: #1a1a1a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: white;
+            box-sizing: border-box;
+            opacity: 0;
+            transform: translateX(70%);
+            transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+            transition-delay: 0.9s;
+            border-radius: 10px;
+            transition: all 0.2s;
+        }
+
+        .block:hover {
+            transform: scale(0.98);
+            border-radius: 20px;
+        }
+
+        .bigb {
+            margin: 2%;
+            width: 100%;
+        }
+
+        .bigb:hover {
+            width: 100%;
+            background-image: linear-gradient(163deg, #6f1095 0%, #1ec648 100%);
+            border-radius: 20px;
+            transition: all 0.3s;
+            box-shadow: 0px 0px 30px 1.5px rgba(0, 255, 117, 0.30);
+        }
+
+        .timer {
+            font-size: 1.5rem;
+            text-align: center;
+            color: #009688;
+        }
+
+        .contact-bubble {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .contact-bubble img {
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .team-details {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .team-bubble {
+            text-align: center;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            margin: 0 5px;
+            width: 150px;
+            height: 220px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+            border-radius: 20px;
+            transition: all 0.3s;
+        }
+
+        .card2 {
+            width: 100%;
+            height: 100%;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            transition: all 0.2s;
+        }
+
+        .card2:hover {
+            transform: scale(0.98);
+            border-radius: 20px;
+        }
+
+        .card:hover {
+            box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+        }
+
+        @media (max-width: 600px) {
+        .frimg-text-overlay {
+            font-size: 14px; /* Adjust the font size as needed */
+        }
+            body {
+                font-family: 'Lucida Calligraphy';
+            }
+
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <pre><h3><a href="#">Events</a>     <a href="#">Invitations</a></h3></pre>
+        <h1><a href="#" class="highlight"><b><i>Freshers</b></i></a></h1>
+        <pre><h3><a href="#">Departments</a>    <a href="#">Gallery</a></h3></pre>
+    </nav>
+
+    <div class="container">
+        <div class="block">
+            <div class="frimg-container">
+                <img class="frimg" src="https://www.akashinstitutions.com/storage/notifications/64830a335d04d_700_336.jpg" alt="VRSEC IT Department" width="100%">
+                <div class="frimg-text-overlay"> <font size="10">  
+        <p>Freshers Day Invitation</p>
+        <p>Come join us for a day filled with</p>
+        <p>excitement, laughter, and new beginnings!</p></font>
+    </div>
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="timer">
+                Countdown to 10th Feb 2024
+                <br>
+                <span id="countdown"></span>
+            </div>
+        </div>
+
+        <div class="bigb">
+            <div class="block">
+                <h2>Events Information</h2>
+                <p class="events-info">Write your events information here...</p>
+            </div>
+        </div>
+
+        <div class="bigb">
+            <div class="block">
+                <h2>IT HOD</h2>
+                <img class="staff" src="hod_picture.jpg" alt="IT HOD">
+                <p>Write about the IT HOD here...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-details">
+        <div class="team-bubble">
+            <div class="card">
+                <div class="card2"></div>
+            </div>
+            <p>Contact Team Member 1</p>
+        </div>
+
+        <div class="team-bubble">
+            <div class="card">
+                <div class="card2"></div>
+            </div>
+            <p>Contact Team Member 2</p>
+        </div>
+
+        <div class="team-bubble">
+            <div class="card">
+                <div class="card2"></div>
+            </div>
+            <p>Contact Team Member 3</p>
+        </div>
+    </div>
+
+    <script>
+        var countDownDate = new Date("Feb 10, 2024 00:00:00").getTime();
+
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const blocks = document.querySelectorAll('.block');
+            function checkScroll() {
+                blocks.forEach(block => {
+                    const blockTop = block.getBoundingClientRect().top;
+                    const screenHeight = window.innerHeight;
+                    if (blockTop < screenHeight / 1.5) {
+                        block.style.opacity = '1';
+                        block.style.transform = 'translateX(0)';
+                    }
+                });
+            }
+
+            checkScroll();
+
+            window.addEventListener('scroll', checkScroll);
+        });
+    </script>
+</body>
+
+</html>
