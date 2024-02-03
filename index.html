@@ -181,30 +181,29 @@
             box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
         }
 
-       @media (max-width: 600px) {
+      @media (max-width: 600px) {
     .frimg-text-overlay {
-        font-size: 14px; /* Adjust the font size for mobile */
-        transition-delay: 3s; /* Delay the appearance of text on hover */
+        font-size: 14px;
+        transition-delay: 3s;
     }
 
     .frimg-container:hover .frimg-text-overlay {
         opacity: 1;
     }
+
+    body {
+        font-family: 'Lucida Calligraphy';
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+    }
 }
 
-            body {
-                font-family: 'Lucida Calligraphy';
-            }
-
-            nav {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav a {
-                margin-bottom: 10px;
-            }
-        }
     </style>
 </head>
 
